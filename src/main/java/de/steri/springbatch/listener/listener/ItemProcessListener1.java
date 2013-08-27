@@ -3,7 +3,7 @@ package de.steri.springbatch.listener.listener;
 import org.springframework.batch.core.ItemProcessListener;
 import org.springframework.stereotype.Component;
 
-	@Component("processListener1")
+	@Component("itemProcessListener1")
 	public class ItemProcessListener1<T extends Object, S> implements ItemProcessListener<T, S>  {
 
 		public void beforeProcess(T item) {
