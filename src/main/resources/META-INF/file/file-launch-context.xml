@@ -20,6 +20,6 @@
 
 	<batch:job-repository id="jobRepository" />
 
-	<import resource="classpath:/META-INF/file/module-context.xml" />
+	<import resource="classpath:/META-INF/file/file-module-context.xml" />
 
 </beans>

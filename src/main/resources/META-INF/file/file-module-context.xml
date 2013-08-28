@@ -12,18 +12,13 @@
 
 		<batch:step id="step1">
 	    	<batch:tasklet transaction-manager="transactionManager">
-	    	 	<batch:chunk reader="myFileItemReader1" processor="processor2"  writer="myFileItemWriter1" commit-interval="10" />
+	    	 	<batch:chunk reader="fileItemReader1" processor="processor1"  writer="fileItemWriter1" commit-interval="100" />
         	</batch:tasklet>
         </batch:step>
-        
-       <batch:listeners>
-        	<batch:listener ref="listener1"/>
-        </batch:listeners>
-	</batch:job> 
+   	</batch:job> 
 	
-	<bean id="myFileItemReader1" class="org.springframework.batch.item.file.FlatFileItemReader">
+	<bean id="fileItemReader1" class="org.springframework.batch.item.file.FlatFileItemReader">
 		<property name="resource" value="classpath:InputFile.txt" />
-		<!-- property name="linesToSkip" value="1" / -->
 		<property name="lineMapper">
 			<bean class="org.springframework.batch.item.file.mapping.DefaultLineMapper">
 				<property name="lineTokenizer">
@@ -33,14 +28,18 @@
 							value="eins, zwei, drei" />
 					</bean>
 				</property>
-				<property name="fieldSetMapper" ref="MyFieldSetMapper1" />
+				<property name="fieldSetMapper" ref="fieldSetMapper1" />
 			</bean>
 			</property>
 	</bean>
-	<bean id="MyFieldSetMapper1" class="de.steri.springbatch.file.MyFieldSetMapper"></bean>
+	<bean id="fieldSetMapper1" class="de.steri.springbatch.file.processing.FieldSetMapper1">
+	</bean>
 	
-	<bean id="myFileItemWriter1" class="org.springframework.batch.item.file.FlatFileItemWriter">
-		<property name="resource" value="classpath:OutputFile.txt" />
+	<bean id="fileItemWriter1" class="org.springframework.batch.item.file.FlatFileItemWriter">
+		<!-- <property name="resource" value="classpath:OutputFile.txt" /> 
+		TODO: Fix the absolute path to the file-system
+		 -->		
+		<property name="resource" value="file:c:\springsource\workspace\Springbatch_SimpleExamples\src\main\etc\OutputFile.txt" /> 
 		 <property name="lineAggregator">
         	<bean class="org.springframework.batch.item.file.transform.PassThroughLineAggregator">
         	</bean>
