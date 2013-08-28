@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 public class StepExecutionListener1 implements StepExecutionListener {
 
 	public void beforeStep(StepExecution stepExecution) {
-		System.out.println("***JobExecutionListener1 beforeJob AUFGERUFEN***");
+		System.out.println("***stepExecutionListener1 beforeStep AUFGERUFEN***");
 		
 	}
 
 	public ExitStatus afterStep(StepExecution stepExecution) {
-		System.out.println("***JobExecutionListener1 beforeJob AUFGERUFEN***");
+		System.out.println("***stepExecutionListener1 afterStep AUFGERUFEN***");
 		return null;
 	}
 }

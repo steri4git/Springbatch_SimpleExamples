@@ -8,16 +8,16 @@ import org.springframework.stereotype.Component;
 
 		public void beforeProcess(T item) {
 			
-			System.out.println("***PROCESSLISTENER1 BEFOREPROCESS AUFGERUFEN***");
+			System.out.println("***itemProcessListener1 beforeProcess AUFGERUFEN***");
 			
 		}
 
 		public void afterProcess(T item, S result) {
-			System.out.println("***PROCESSLISTENER1 AFTERPROCESS AUFGERUFEN***");
+			System.out.println("***itemProcessListener1 afterProcess AUFGERUFEN***");
 			
 		}
 
 		public void onProcessError(T item, Exception e) {
-			System.out.println("***PROCESSLISTENER1 ONPROCESSERROR AUFGERUFEN***");
+			System.out.println("***PROCESSLISTENER1 onProcessError AUFGERUFEN***");
 		}
 	}

@@ -14,15 +14,19 @@
 			<batch:tasklet transaction-manager="transactionManager" start-limit="100"   >
 				<batch:chunk reader="reader1" processor="processor1" writer="writer1" commit-interval="6" />
 					<batch:listeners>
-        				<batch:listener  ref="itemProcessListener1"/>
+        				<batch:listener ref="itemProcessListener1"/>
         				<batch:listener ref="itemReadListener1"/>
-        				
-        			</batch:listeners>
+        				<batch:listener after-write-method="afterWrite" >
+        				   <bean id="itemWriteListener1" class="de.steri.springbatch.listener.listener.ItemWriteListener1"/>
+        				</batch:listener>
+           			</batch:listeners>
 				</batch:tasklet>
+			<batch:listeners>
+				<batch:listener ref="stepExecutionListener1" />
+			</batch:listeners>
 		</batch:step>
-		
-
-      
-       
+		<batch:listeners>
+			<batch:listener ref="jobExecutionListener1" />
+		</batch:listeners>
 	</batch:job> 
 </beans>
