@@ -9,6 +9,7 @@ public class Decider1 implements JobExecutionDecider {
 
 	public FlowExecutionStatus decide(JobExecution jobExecution,
 			StepExecution stepExecution) {
+		System.out.println("DECIDER1 AUGERUFEN");
 		
 		return new FlowExecutionStatus("STEP3");
 		//return new FlowExecutionStatus("STEP4");

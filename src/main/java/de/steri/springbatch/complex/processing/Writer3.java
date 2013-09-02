@@ -11,16 +11,16 @@ import org.springframework.stereotype.Component;
 /**
  * Dummy {@link ItemWriter} which only logs data it receives.
  */
-@Component("writer2")
-public class Writer2 implements ItemWriter<Object> {
+@Component("writer3")
+public class Writer3 implements ItemWriter<Object> {
 
-	private static final Log log = LogFactory.getLog(Writer2.class);
+	private static final Log log = LogFactory.getLog(Writer3.class);
 	
 	/**
 	 * @see ItemWriter#write(java.util.List)
 	 */
 	public void write(List<? extends Object> data) throws Exception {
-		System.out.println("WRITER 2 AUFGERUFEN");
+		System.out.println("WRITER 3 AUFGERUFEN");
 		if (data != null){
 			System.out.println("Anzahl der Items: " + data.size());
 		}
