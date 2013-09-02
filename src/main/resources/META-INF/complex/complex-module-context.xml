@@ -45,11 +45,11 @@
 					commit-interval="1" retry-limit="2" skip-limit="2">
 					<batch:retryable-exception-classes>
 						<batch:include
-							class="de.steri.sprinbatch.complex.processing.exception.RetryableException" />
+							class="de.steri.springbatch.complex.processing.exception.RetryableException" />
 					</batch:retryable-exception-classes>
 					<batch:skippable-exception-classes>
 						<batch:include
-							class="de.steri.sprinbatch.complex.processing.exception.SkipableException" />
+							class="de.steri.springbatch.complex.processing.exception.SkipableException" />
 					</batch:skippable-exception-classes>
 				</batch:chunk>
 			</batch:tasklet>
