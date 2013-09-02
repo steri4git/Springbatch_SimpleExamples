@@ -10,6 +10,7 @@
 	<classpathentry kind="src" path="src/main/resources/META-INF/simple"/>
 	<classpathentry kind="src" path="src/main/resources/META-INF/listener"/>
 	<classpathentry kind="src" path="src/main/resources/META-INF/file"/>
+	<classpathentry kind="src" path="src/main/resources/META-INF/complex"/>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
