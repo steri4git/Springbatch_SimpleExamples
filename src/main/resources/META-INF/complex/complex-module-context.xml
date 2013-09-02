@@ -57,7 +57,7 @@
 
 		<batch:step id="step4">
 			<batch:tasklet transaction-manager="transactionManager"
-				start-limit="100" task-executor="taskExecutor" throttle-limit="6">
+				start-limit="100" task-executor="taskExecutor" throttle-limit="2">
 				<batch:chunk reader="reader4" writer="writer4"
 					commit-interval="1" />
 			</batch:tasklet>
