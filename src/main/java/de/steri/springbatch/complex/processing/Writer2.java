@@ -20,7 +20,7 @@ public class Writer2 implements ItemWriter<Object> {
 	 * @see ItemWriter#write(java.util.List)
 	 */
 	public void write(List<? extends Object> data) throws Exception {
-		System.out.println("WRITER 1 AUFGERUFEN");
+		System.out.println("WRITER 2 AUFGERUFEN");
 		if (data != null){
 			System.out.println("Anzahl der Items: " + data.size());
 		}

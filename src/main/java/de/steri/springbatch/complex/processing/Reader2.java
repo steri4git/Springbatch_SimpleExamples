@@ -18,7 +18,7 @@ public class Reader2 implements ItemReader<String> {
 	 * Reads next record from input
 	 */
 	public String read() throws Exception {
-		System.out.println("READER 1 AUFFERUFEN");
+		System.out.println("READER 2 AUFFERUFEN");
 		if (index < input.length) {
 			return input[index++];
 		}
