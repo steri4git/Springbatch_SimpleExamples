@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Component("reader3")
 public class Reader3 implements ItemReader<String> {
 	
-	private String[] input = {"Hello 11", "Hello 22","Hello 33","Hello 44","Hello 55","Hello 66",};
+	private String[] input = {"Hello 31", "Hello 32","Hello 33","Hello 34","Hello 35","Hello 36",};
 	
 	private int index = 0;
 	
