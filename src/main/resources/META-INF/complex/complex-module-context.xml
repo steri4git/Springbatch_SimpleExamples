@@ -6,11 +6,12 @@
 	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<description>Example job to get you started. It provides a skeleton for
-		a typical batch application.</description>
-
+		a typical batch application.
+	</description>
 
 	<batch:job id="complexJob">
-		<batch:split id="split1" task-executor="taskExecutor" next="decision1">
+		<batch:split id="split1" task-executor="taskExecutor"
+			next="decision1">
 			<batch:flow>
 				<batch:step id="step1">
 					<batch:tasklet transaction-manager="transactionManager"
@@ -31,25 +32,21 @@
 			</batch:flow>
 		</batch:split>
 
-		<batch:decision id="decision1" decider="decider1">
-			<batch:next on="STEP3" to="step3" />
-			<batch:next on="STEP4" to="step4" />
-		</batch:decision>
-
-
-
 		<batch:step id="step3">
 			<batch:tasklet transaction-manager="transactionManager"
 				start-limit="100">
 				<batch:chunk reader="reader3" writer="writer3"
-					commit-interval="1" retry-limit="2" skip-limit="2">
+					commit-interval="6" retry-limit="2" skip-limit="2">
+
 					<batch:retryable-exception-classes>
 						<batch:include
-							class="de.steri.springbatch.complex.processing.exception.RetryableException" />
+							class="de.steri.springbatch.complex.processing.exception.SkipableException" />
 					</batch:retryable-exception-classes>
+
 					<batch:skippable-exception-classes>
 						<batch:include
 							class="de.steri.springbatch.complex.processing.exception.SkipableException" />
+						<batch:include class="java.lang.Exception" />
 					</batch:skippable-exception-classes>
 				</batch:chunk>
 			</batch:tasklet>
@@ -63,9 +60,13 @@
 			</batch:tasklet>
 		</batch:step>
 
+		<batch:decision id="decision1" decider="decider1">
+			<batch:next on="STEP3" to="step3" />
+			<batch:next on="STEP4" to="step4" />
+		</batch:decision>
 	</batch:job>
 
 
-	<bean id="decider1" class="de.steri.springbatch.complex.processing.Decider1" /> 
-	<bean id="taskExecutor"  class="org.springframework.core.task.SimpleAsyncTaskExecutor"/>
+	<bean id="decider1" class="de.steri.springbatch.complex.processing.Decider1" />
+	<bean id="taskExecutor" class="org.springframework.core.task.SimpleAsyncTaskExecutor" />
 </beans>
