@@ -4,9 +4,10 @@
 
 #Custom Steri
 target/
+#.classpath
+#.project
 
 *.pydevproject
-#.project
 .metadata
 bin/
 tmp/
@@ -15,7 +16,7 @@ tmp/
 *.swp
 *~.nib
 local.properties
-#.classpath
+
 .settings/
 .loadpath
 
