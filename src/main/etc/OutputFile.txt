@@ -1,72 +1,73 @@
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
-einszweidrei
+FileValue [valueOne=EINS, valueTwo=DREI, valueThree=ZWEI]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]
+FileValue [valueOne=eins, valueTwo=drei, valueThree=zwei]

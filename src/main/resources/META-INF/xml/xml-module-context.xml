@@ -33,7 +33,14 @@
 			<util:map id="aliases">
 				<entry key="dateiType" value="de.steri.springbatch.xml.processing.domain.Datei" />
 				<entry key="datum" value="java.math.BigDecimal" />
-				<!-- <entry key="ersteller" value="java.lang.String" /> -->
+				<entry key="ersteller" value="java.lang.String" />
+				<entry key="personen" value="de.steri.springbatch.xml.processing.domain.Person" />
+				<entry key="adressen" value="de.steri.springbatch.xml.processing.domain.Adresse" />
+				<entry key="strasse" value="java.lang.String" />
+				<entry key="hausnummer" value="java.lang.String" />
+				<entry key="stadt" value="java.lang.String" />
+				<entry key="plz" value="java.lang.String" />
+				<entry key="vorname" value="java.lang.String" />
 			</util:map>
 		</property>
 	</bean>

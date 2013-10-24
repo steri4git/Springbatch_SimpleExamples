@@ -7,6 +7,8 @@ import org.apache.commons.logging.LogFactory;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.stereotype.Component;
 
+import de.steri.springbatch.xml.processing.domain.Datei;
+
 
 /**
  * Dummy {@link ItemWriter} which only logs data it receives.
@@ -23,7 +25,10 @@ public class Writer1 implements ItemWriter<Object> {
 		System.out.println("WRITER 1 AUFGERUFEN");
 		if (data != null){
 			System.out.println("Anzahl der Items: " + data.size());
-			
+			for (Object object : data) {
+				Datei datei = (Datei)object;
+				System.out.println("Anzahl Personen: " + datei.getPersonen().size());
+			}
 		}
 		log.info(data);
 	}

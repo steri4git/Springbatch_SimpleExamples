@@ -12,7 +12,7 @@
 
 		<batch:step id="step1">
 	    	<batch:tasklet transaction-manager="transactionManager">
-	    	 	<batch:chunk reader="fileItemReader1" processor="processor1"  writer="fileItemWriter1" commit-interval="100" />
+	    	 	<batch:chunk reader="fileItemReader1" writer="fileItemWriter1" commit-interval="100" />
         	</batch:tasklet>
         </batch:step>
    	</batch:job> 
@@ -24,8 +24,7 @@
 				<property name="lineTokenizer">
 					<bean
 						class="org.springframework.batch.item.file.transform.DelimitedLineTokenizer">
-						<property name="names" 
-							value="eins, zwei, drei" />
+						<property name="names" value="EINS,ZWEI,DREI" />
 					</bean>
 				</property>
 				<property name="fieldSetMapper" ref="fieldSetMapper1" />

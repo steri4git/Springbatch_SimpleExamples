@@ -6,7 +6,7 @@ public class Datei {
 
 	private String datum;
 	private String ersteller;
-	//private List<Person> personen;
+	private List<Person> personen;
 
 	public String getDatum() {
 		return datum;
@@ -23,14 +23,14 @@ public class Datei {
 	public void setErsteller(String ersteller) {
 		this.ersteller = ersteller;
 	}
-/*
+
 	public List<Person> getPersonen() {
 		return personen;
 	}
 
 	public void setPersonen(List<Person> personen) {
 		this.personen = personen;
-	}*/
+	}
 
 	@Override
 	public int hashCode() {
@@ -39,6 +39,8 @@ public class Datei {
 		result = prime * result + ((datum == null) ? 0 : datum.hashCode());
 		result = prime * result
 				+ ((ersteller == null) ? 0 : ersteller.hashCode());
+		result = prime * result
+				+ ((personen == null) ? 0 : personen.hashCode());
 		return result;
 	}
 
@@ -61,6 +63,11 @@ public class Datei {
 				return false;
 		} else if (!ersteller.equals(other.ersteller))
 			return false;
+		if (personen == null) {
+			if (other.personen != null)
+				return false;
+		} else if (!personen.equals(other.personen))
+			return false;
 		return true;
 	}
 
@@ -71,9 +78,12 @@ public class Datei {
 		builder.append(datum);
 		builder.append(", ersteller=");
 		builder.append(ersteller);
+		builder.append(", personen=");
+		builder.append(personen);
 		builder.append("]");
 		return builder.toString();
 	}
 
+	
 	
 }
