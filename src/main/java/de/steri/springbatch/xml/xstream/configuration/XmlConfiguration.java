@@ -1,4 +1,4 @@
-package de.steri.springbatch.xml.configuration;
+package de.steri.springbatch.xml.xstream.configuration;
 
 import javax.sql.DataSource;
 

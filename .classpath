@@ -11,7 +11,8 @@
 	<classpathentry kind="src" path="src/main/resources/META-INF/listener"/>
 	<classpathentry kind="src" path="src/main/resources/META-INF/file"/>
 	<classpathentry kind="src" path="src/main/resources/META-INF/complex"/>
-	<classpathentry kind="src" path="src/main/resources/META-INF/xml"/>
+	<classpathentry kind="src" path="src/main/resources/META-INF/xml/jaxb"/>
+	<classpathentry kind="src" path="src/main/resources/META-INF/xml/xstream"/>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
@@ -23,7 +24,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+	<classpathentry excluding="**|META-INF/xml/jaxb/|META-INF/xml/xstream/" kind="src" output="target/classes" path="src/main/resources">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>

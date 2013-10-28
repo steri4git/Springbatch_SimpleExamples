@@ -12,7 +12,7 @@
 
 	<context:property-placeholder location="classpath:batch.properties" />
 
-	<context:component-scan base-package="de.steri.springbatch.xml" />
+	<context:component-scan base-package="de.steri.springbatch.xml.jaxb.*" />
 
 	<jdbc:initialize-database data-source="dataSource">
 		<jdbc:script location="${batch.schema.script}" />
@@ -20,6 +20,6 @@
 
 	<batch:job-repository id="jobRepository" />
 
-	<import resource="classpath:/META-INF/xml/xml-module-context.xml" />
+	<import resource="classpath:/META-INF/xml/jaxb/xml-jaxb-module-context.xml" />
 
 </beans>

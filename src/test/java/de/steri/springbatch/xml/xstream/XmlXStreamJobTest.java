@@ -1,4 +1,4 @@
-package de.steri.springbatch.xml;
+package de.steri.springbatch.xml.xstream;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -12,9 +12,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-@ContextConfiguration(locations={"/xml-launch-context.xml"})
+@ContextConfiguration(locations={"/xml-xstream-launch-context.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
-public class XMLJobTest {
+public class XmlXStreamJobTest {
 	
 	@Autowired
 	private JobLauncher jobLauncher;

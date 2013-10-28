@@ -1,4 +1,4 @@
-package de.steri.springbatch.xml.processing.domain;
+package de.steri.springbatch.xml.xstream.domain;
 
 public class Adresse {
 
