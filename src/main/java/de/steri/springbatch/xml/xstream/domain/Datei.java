@@ -2,9 +2,13 @@ package de.steri.springbatch.xml.xstream.domain;
 
 import java.util.List;
 
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+
 public class Datei {
 
+	@XStreamAlias("datum")
 	private String datum;
+	@XStreamAlias("ersteller")
 	private String ersteller;
 	private List<Person> personen;
 

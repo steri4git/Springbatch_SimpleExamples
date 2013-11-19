@@ -29,7 +29,7 @@
 		<property name="unmarshaller" ref="dateiMarshaller" />
 	</bean>
 
-	<bean id="dateiMarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+	<bean id="dateiMarshaller" class="org.springframework.oxm.xstream.XStreamMarshaller">
         <property name="classesToBeBound">
             <list>
                 <value>de.steri.springbatch.xml.jaxb.domain.DateiType</value>
