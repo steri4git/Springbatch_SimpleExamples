@@ -26,10 +26,7 @@ public class Writer1 implements ItemWriter<DateiType> {
 		System.out.println("WRITER 1 AUFGERUFEN");
 		if (data != null){
 			System.out.println("Anzahl der Items: " + data.size());
-			for (Object object : data) {
-				DateiType datei = (DateiType)object;
-				System.out.println("Anzahl Personen: " + datei.getPersonen().size());
-			}
+			
 		}
 		//log.info(data);
 	}
