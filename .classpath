@@ -13,6 +13,7 @@
 	<classpathentry kind="src" path="src/main/resources/META-INF/complex"/>
 	<classpathentry kind="src" path="src/main/resources/META-INF/xml/jaxb"/>
 	<classpathentry kind="src" path="src/main/resources/META-INF/xml/xstream"/>
+	<classpathentry kind="src" path="src/main/resources/META-INF/xml/multipleXmlFile"/>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="optional" value="true"/>

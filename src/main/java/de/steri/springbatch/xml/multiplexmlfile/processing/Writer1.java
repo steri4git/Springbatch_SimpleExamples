@@ -1,4 +1,4 @@
-package de.steri.springbatch.xml.xstream.processing;
+package de.steri.springbatch.xml.multiplexmlfile.processing;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ import de.steri.springbatch.xml.jaxb.domain.DateiType;
 /**
  * Dummy {@link ItemWriter} which only logs data it receives.
  */
-@Component("xstreamItemWriter1")
+@Component("writer1")
 public class Writer1 implements ItemWriter<DateiType> {
 
 	//private static final Log log = LogFactory.getLog(Writer1.class);
