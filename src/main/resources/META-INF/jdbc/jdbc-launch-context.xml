@@ -20,13 +20,7 @@
 
 	<batch:job-repository id="jobRepository" />
 
-	<bean id="queries" class="java.util.HashMap">
-		<constructor-arg>
-			<map>
-				<entry key="COUNT_PERSONEN" value="SELECT COUNT (*) FROM Person" />
-			</map>
-		</constructor-arg>
-	</bean>
+	
 	<import resource="classpath:/META-INF/jdbc/jdbc-module-context.xml" />
 
 </beans>

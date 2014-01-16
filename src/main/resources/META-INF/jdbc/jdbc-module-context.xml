@@ -25,6 +25,5 @@
 		<property name="rowMapper" ref="personRowMapper" />
 	</bean>
 	<bean id="personRowMapper" class="de.steri.springbatch.jdbc.processing.PersonRowMapper"/>
-
-
+	
 </beans>
