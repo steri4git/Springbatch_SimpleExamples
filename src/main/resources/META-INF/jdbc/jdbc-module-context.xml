@@ -6,13 +6,15 @@
 	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<description>Example job to get you started. It provides a skeleton for
-		a typical batch application.</description>
+		a typical batch application.
+	</description>
 
 	<batch:job id="Job1">
 		<batch:step id="step1">
 			<batch:tasklet transaction-manager="transactionManager"
 				start-limit="100">
-				<batch:chunk reader="personJdbcCursorItemReader" writer="writer1" commit-interval="2" />
+				<batch:chunk reader="personJdbcCursorItemReader" writer="personItemWriter"
+					commit-interval="2" />
 			</batch:tasklet>
 		</batch:step>
 	</batch:job>
@@ -20,10 +22,33 @@
 	<bean id="personJdbcCursorItemReader"
 		class="org.springframework.batch.item.database.JdbcCursorItemReader">
 		<property name="dataSource" ref="dataSource" />
-		<property name="sql"
-			value="select * from PERSON" />
+		<property name="sql" value="select * from PERSON" />
 		<property name="rowMapper" ref="personRowMapper" />
 	</bean>
-	<bean id="personRowMapper" class="de.steri.springbatch.jdbc.processing.PersonRowMapper"/>
-	
+	<bean id="personRowMapper" class="de.steri.springbatch.jdbc.processing.PersonRowMapper" />
+
+	<bean id="personItemWriter"
+		class="org.springframework.batch.item.database.JdbcBatchItemWriter">
+		<property name="dataSource" ref="dataSource" />
+		<property name="assertUpdates" value="true" />
+		<property name="itemPreparedStatementSetter">
+			<bean
+				class="de.steri.springbatch.jdbc.processing.PersonPreparedStatementSetter" />
+		</property>
+		<property name="sql"
+			value="INSERT INTO PERSON (Id, Vorname, Name, Alter) VALUES(?,?,?,?)" />
+	</bean>
+
+	<bean id="queries" class="java.util.HashMap">
+		<constructor-arg>
+			<map>
+				<entry key="COUNT_PERSON" value="SELECT COUNT (*) FROM Person" />
+			</map>
+		</constructor-arg>
+	</bean>
+
+	<bean id="personJDBCTemplates" class="de.steri.springbatch.jdbc.processing.PersonJDBCTemplates">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="queries" ref="queries"></property>
+	</bean>
 </beans>

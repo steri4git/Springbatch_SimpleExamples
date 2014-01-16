@@ -10,7 +10,8 @@ import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.transaction.annotation.Transactional;
+
+import de.steri.springbatch.jdbc.processing.PersonJDBCTemplates;
 
 @ContextConfiguration(locations={"/jdbc-launch-context.xml"})
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -22,6 +23,9 @@ public class JdbcJobTest {
 	@Autowired
 	private Job job;
 	
+	@Autowired
+	private PersonJDBCTemplates personJDBCTemplates;
+	
 	@Test
 	public void testSimpleProperties() throws Exception {
 		assertNotNull(jobLauncher);
@@ -30,5 +34,7 @@ public class JdbcJobTest {
 	@Test
 	public void testLaunchJob() throws Exception {
 		jobLauncher.run(job, new JobParameters());
+		System.out.println(personJDBCTemplates.readData());
+		
 	}
 }
